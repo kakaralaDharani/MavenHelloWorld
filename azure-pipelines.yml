@@ -37,6 +37,6 @@ steps:
     azureSubscription: 'ME-MngEnv628368-v-kdharani-1(8992fcd5-a321-49d7-b8a4-75e975a34de7)'
     appType: 'webAppLinux'
     WebAppName: 'Newproject'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.war'
     DeploymentTypeLinux: 'oneDeploy'
 
